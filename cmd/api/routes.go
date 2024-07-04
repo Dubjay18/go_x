@@ -7,5 +7,9 @@ type Config struct {
 }
 
 func (app *Config) Routes() {
-	//routes will come here
+	app.Router.GET("/", app.indexPageHandler())
+
+	//apis
+	app.Router.POST("/", app.createTodoHandler())
+	app.Router.DELETE("/:id", app.deleteTodoHandler())
 }
