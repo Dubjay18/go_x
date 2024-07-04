@@ -1,6 +1,8 @@
 module go-fullstack
 
-go 1.18
+go 1.21
+
+toolchain go1.22rc2
 
 require (
 	github.com/a-h/templ v0.2.731 // indirect
